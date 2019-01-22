@@ -1,0 +1,45 @@
+/* http://www.w3schools.com/howto/howto_css_parallax.asp */
+.parallax {
+	height: 80%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position:relative;
+}
+.parallax + div p{
+	
+}
+.parallax:nth-of-type(1) h1{
+	top:0%;
+}
+.parallax + div p:first-child{padding-top:1em;}
+.parallax + div{
+	max-width:800px;
+	margin:0 auto 2em auto; 
+	column-count: 2;
+	column-gap: 0em;
+	padding:2em 0 0 0;
+}
+.parallax + div p{
+	padding:0em 2em 1em 2em;
+}
+.parallax + div blockquote{
+	 break-inside: avoid;
+}
+.parallax + div:last-child blockquote{
+	 break-inside: auto;
+}
+.bgimg-1{
+	background-image:url(../img/dali-06.jpg);
+}
+.bgimg-2{
+	background-image:url(../img/dali-02.jpg);
+}
+.bgimg-3{
+	background-image:url(../img/dali-03.jpg);
+}
+.bgimg-4{
+	background-image:url(../img/dali-05.jpg);
+}
